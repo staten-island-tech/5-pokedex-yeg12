@@ -1,2 +1,4 @@
-number = range(1000000000000000000000000000000000000000)
-print (number)
+import json
+pokedex = open ("./pokedex.json", encoding="utf8")
+data = json.load(pokedex)
+print(data[1]["name"]["english"])
