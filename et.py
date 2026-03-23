@@ -1,4 +1,7 @@
 import json
 pokedex = open ("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
-print(data[1]["name"]["english"])
+def pokemon():
+    for s in data:
+        print(s["name"]["english"])
+pokemon()
