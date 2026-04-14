@@ -7,10 +7,12 @@
 # pokemon()
 
 
+
 import json
 pokedex = open ("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
-def pokemon():
-    user = input("what pkemone u wnat")
-    lang = input("what language u wnat")
-pokemon()
+d = input("what pokemnon")
+for i in data:
+    if d == i:
+        
+
