@@ -20,11 +20,30 @@
 # pokemon()
         
 
+# import json
+# pokedex = open ("./pokedex.json", encoding="utf8")
+# data = json.load(pokedex)
+
+# def pokemon():
+#     type = input("hwat type of pokemon  ")
+#     for a in data:
+#         if type in a["type"]:
+#             print(a["name"]["english"])
+# pokemon()
+
+
+
+
+
+
+
 import json
 pokedex = open ("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
 
 def pokemon():
-    type = input("hwat type of pokemon  ")
-    for a in data:
-        
+    user = input("input keywords for ur pokemon")
+    for k in data:
+        if user in k["names"]:
+            print(k["name"]["english"])
+pokemon()
