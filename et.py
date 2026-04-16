@@ -27,6 +27,4 @@ data = json.load(pokedex)
 def pokemon():
     type = input("hwat type of pokemon  ")
     for a in data:
-        if a["type"] == type:
-            print(a["name"])
-pokemon()
+        
