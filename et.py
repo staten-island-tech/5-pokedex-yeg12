@@ -42,8 +42,8 @@ pokedex = open ("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
 
 def pokemon():
-    user = input("input keywords for ur pokemon")
+    search = input("input keywords for ur pokemon   ")
     for k in data:
-        if user in k["names"]:
+        if search in k["name"]["english"]:
             print(k["name"]["english"])
 pokemon()
