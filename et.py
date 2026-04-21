@@ -1,10 +1,10 @@
-# import json
-# pokedex = open ("./pokedex.json", encoding="utf8")
-# data = json.load(pokedex)
-# def pokemon():
-#     for s in data:
-#         print(s["name"]["english"])
-# pokemon()
+import json
+pokedex = open ("./pokedex.json", encoding="utf8")
+data = json.load(pokedex)
+def pokemon():
+    for s in data:
+        print(s["name"]["english"])
+pokemon()
 
 
 # import json
@@ -37,13 +37,13 @@
 
 
 
-import json
-pokedex = open ("./pokedex.json", encoding="utf8")
-data = json.load(pokedex)
+# import json
+# pokedex = open ("./pokedex.json", encoding="utf8")
+# data = json.load(pokedex)
 
-def pokemon():
-    search = input("input keywords for ur pokemon   ")
-    for k in data:
-        if search in k["name"]["english"]:
-            print(k["name"]["english"])
-pokemon()
+# def pokemon():
+#     search = input("input keywords for ur pokemon   ")
+#     for k in data:
+#         if search in k["name"]["english"]:
+#             print(k["name"]["english"])
+# pokemon()
